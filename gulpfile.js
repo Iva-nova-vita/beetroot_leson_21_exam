@@ -24,7 +24,7 @@ gulp.task("prefix", () =>
         cascade: false
       })
     )
-    .pipe(gulp.dest("./"))
+    .pipe(gulp.dest("css"))
 );
 
 gulp.task("watch", () => {

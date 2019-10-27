@@ -21,7 +21,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  width: 100%;
   h1 {
     font-family: $main-font;
     font-size: 48px;
@@ -29,6 +28,11 @@ body {
     font-weight: 400;
     margin: 0;
     padding-top: 15%;
+    @media screen and (max-width: 340px) {
+      & {
+        font-size: 42px;
+      }
+    }
   }
   p {
     font-size: 22px;
@@ -46,6 +50,16 @@ body {
         width: 500px;
       }
     }
+    @media screen and (min-width: 451px) and (max-width: 770px) {
+      & {
+        width: 400px;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      & {
+        width: 300px;
+      }
+    }
 
     position: relative;
     &::placeholder {
@@ -54,9 +68,15 @@ body {
       letter-spacing: 0.2em;
       color: lightgrey;
       padding-left: 15%;
-      @media screen and (max-width: 770px) {
+      @media screen and (max-width: 771px) {
         & {
           padding-left: 5%;
+        }
+      }
+      @media screen and (max-width: 770px) {
+        & {
+          font-size: 10px;
+          letter-spacing: 0.1em;
         }
       }
     }
@@ -74,6 +94,12 @@ body {
     font-family: $main-font;
 
     background-color: #5474fd;
+    @media screen and (max-width: 450px) {
+      & {
+        width: 110px;
+        text-align: start;
+      }
+    }
     img {
       position: absolute;
       top: 18px;
@@ -81,13 +107,23 @@ body {
     }
   }
   form {
-    margin: 0 auto;
+    margin: 0 auto 75px auto;
     font-size: 0;
     position: relative;
     width: 650px;
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 771px) {
       & {
         width: 500px;
+      }
+    }
+    @media screen and (min-width: 451px) and (max-width: 770px) {
+      & {
+        width: 400px;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      & {
+        width: 300px;
       }
     }
   }
@@ -151,5 +187,260 @@ header {
     &:nth-child(3) {
       top: 18px;
     }
+  }
+}
+a {
+  color: $main-color;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: $main-font;
+
+  img {
+    display: block;
+    width: 15px;
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 450px) {
+    
+      display: none;
+    
+  }
+}
+#why_choise_us {
+  background-image: url(../images/Rectangle_7.jpg);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container {
+    display: flex;
+    @media screen and (max-width: 570px) {
+      flex-direction: column;
+    }
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    a {
+      background-color: #5474fd;
+      opacity: 0.7;
+      text-transform: uppercase;
+      padding: 15px;
+      margin-top: 15px;
+      display: inline-block;
+    }
+  }
+  .column {
+    width: 31%;
+    padding: 5%;
+    @media screen and (max-width: 570px) {
+      width: 60%;
+    }
+    .image1 {
+      float: left;
+      max-width: 100%;
+    }
+    .image2 {
+      float: right;
+      max-width: 100%;
+    }
+  }
+  h2 {
+    font-family: "Aleo", serif;
+    font-size: 36px;
+
+    font-weight: 300;
+  }
+  p {
+    font-family: $main-font;
+    font-size: 16px;
+    letter-spacing: 0.1;
+    line-height: 26px;
+    font-weight: lighter;
+  }
+}
+#icons {
+  padding: 5% 15%;
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  @media screen and (max-width: 570px) {
+    flex-direction: column;
+  }
+  h2 {
+    font-family: "Aleo", serif;
+    font-size: 36px;
+
+    font-weight: lighter;
+    @media screen and (min-width: 771px) and (max-width: 1011px) {
+      font-size: 28px;
+    }
+    @media screen and (min-width: 571px) and (max-width: 770px) {
+      font-size: 20px;
+    }
+  }
+}
+#spain1 {
+  background-image: url(../images/Spain1.jpg);
+  height: 50vh;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+
+  div {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 350px;
+    padding: 0 2%;
+    background-color: black;
+    opacity: 0.8;
+    @media screen and (max-width: 625px) {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+    }
+    @media screen and (max-width: 450px) {
+      width: 300px;
+    }
+
+    p {
+      font-size: 20px;
+      letter-spacing: 0;
+      font-weight: lighter;
+      font-size: 16px;
+      margin: 10px 0;
+      @media screen and (max-width: 450px) {
+        font-size: 12px;
+      }
+    }
+    h3 {
+      margin: 0;
+      font-family: $main-font;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    a {
+      background-color: #5474fd;
+      opacity: 0.9;
+      text-transform: uppercase;
+      padding: 15px;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+  }
+}
+#spain2 {
+  background-image: url(../images/Spain2.jpg);
+  height: 50vh;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+
+  div {
+    position: absolute;
+    bottom: 25%;
+    right: 20%;
+    width: 350px;
+    padding: 0 2%;
+    background-color: black;
+    opacity: 0.8;
+    @media screen and (max-width: 625px) {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+    }
+    @media screen and (max-width: 450px) {
+      width: 300px;
+    }
+
+    p {
+      font-size: 20px;
+      letter-spacing: 0;
+      font-weight: lighter;
+      font-size: 16px;
+      margin: 10px 0;
+      @media screen and (max-width: 450px) {
+        font-size: 12px;
+      }
+    }
+    h3 {
+      margin: 0;
+      font-family: $main-font;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    a {
+      background-color: #5474fd;
+      opacity: 0.9;
+      text-transform: uppercase;
+      padding: 15px;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+  }
+}
+#tourist_say {
+  background-image: url(../images/Rectangle_4142.jpg);
+ 
+  padding: 0 15%;
+  & > div {
+    display: flex;
+    @media screen and (max-width: 770px) {
+      flex-direction: column;
+    }
+    .photo{
+      width: 100%;
+      
+      img {max-width: 100%;
+      }
+      
+    }
+    .text {
+      background-color: #333333;
+      padding-left: 5%;
+    }
+    h3 {
+      margin: 0;
+      font-family: $main-font;
+      font-size: 26px;
+      text-transform: uppercase;
+      font-weight: 400;
+     
+      
+      
+      
+      @media screen and (max-width: 770px) {
+        padding-left: 0;
+        padding-top: 5%;
+      }
+    }
+    p {
+      
+      width: 85%;
+      line-height: 20px;
+      
+      @media screen and (max-width: 770px) {
+        padding-left: 0;
+       
+      }
+    }
+  }
+  h2 {
+    font-family: "Aleo", serif;
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0;
+    padding: 10%;
+    text-align: center;
   }
 }
