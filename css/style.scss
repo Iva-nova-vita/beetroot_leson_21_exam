@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans:300,400,600,700&display=swap");
 /*
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Aleo', serif;
@@ -100,6 +100,10 @@ body {
         text-align: start;
       }
     }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 2px 5px #5474fd;
+    }
     img {
       position: absolute;
       top: 18px;
@@ -139,16 +143,7 @@ header {
   align-items: center;
   width: 70%;
 
-  .logo {
-    font-family: $main-font;
-    font-size: 24px;
-    color: $main-color;
-  }
   a {
-    color: $main-color;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: $main-font;
     text-transform: uppercase;
     padding-left: 30px;
     @media screen and (max-width: 1200px) {
@@ -156,7 +151,16 @@ header {
         display: none;
       }
     }
+    &:hover {
+      text-decoration: underline;
+    }
   }
+}
+.logo {
+  font-family: $main-font;
+  font-size: 24px;
+  color: $main-color;
+  font-weight: 600;
 }
 #menu__toggle {
   opacity: 0;
@@ -202,11 +206,6 @@ a {
     padding-top: 10px;
     margin: 0 auto;
   }
-  @media screen and (max-width: 450px) {
-    
-      display: none;
-    
-  }
 }
 #why_choise_us {
   background-image: url(../images/Rectangle_7.jpg);
@@ -229,6 +228,9 @@ a {
       padding: 15px;
       margin-top: 15px;
       display: inline-block;
+      &:hover {
+        box-shadow: 0 2px 5px #5474fd;
+      }
     }
   }
   .column {
@@ -333,6 +335,9 @@ a {
       padding: 15px;
       display: inline-block;
       margin-bottom: 15px;
+      &:hover {
+        box-shadow: 0 2px 5px #5474fd;
+      }
     }
   }
 }
@@ -386,52 +391,58 @@ a {
       padding: 15px;
       display: inline-block;
       margin-bottom: 15px;
+      &:hover {
+        box-shadow: 0 2px 5px #5474fd;
+      }
     }
   }
 }
 #tourist_say {
   background-image: url(../images/Rectangle_4142.jpg);
- 
-  padding: 0 15%;
+  height: 730px;
+
+  padding: 0 10%;
   & > div {
     display: flex;
+
     @media screen and (max-width: 770px) {
       flex-direction: column;
     }
-    .photo{
+    .photo {
       width: 100%;
-      
-      img {max-width: 100%;
+
+      img {
+        max-width: 100%;
       }
-      
     }
     .text {
       background-color: #333333;
-      padding-left: 5%;
+      padding: 0 5%;
     }
     h3 {
-      margin: 0;
+      margin: 30px 0 0 0;
       font-family: $main-font;
       font-size: 26px;
       text-transform: uppercase;
       font-weight: 400;
-     
-      
-      
-      
+
       @media screen and (max-width: 770px) {
         padding-left: 0;
         padding-top: 5%;
       }
     }
+    i {
+      margin-top: 15px;
+      color: #5474fd;
+    }
     p {
-      
-      width: 85%;
+      margin-top: 0;
+
       line-height: 20px;
-      
+      text-indent: 20px;
+
       @media screen and (max-width: 770px) {
         padding-left: 0;
-       
       }
     }
   }
@@ -442,5 +453,23 @@ a {
     margin: 0;
     padding: 10%;
     text-align: center;
+  }
+}
+footer {
+  height: 260px;
+  background-color: #232323;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-weight: lighter;
+  }
+  a {
+    padding: 9px;
+  }
+  a:hover {
+    color: #5474fd;
   }
 }
