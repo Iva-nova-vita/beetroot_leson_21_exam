@@ -280,8 +280,8 @@ a {
     margin: 0 auto;
     display: block;
   }
-  .first,
-  .second {
+  .first_dotted,
+  .second_dotted {
     width: 90%;
   }
   .icon1,
@@ -311,10 +311,10 @@ a {
     width: 100%;
   }
 }
-.first {
+.first_dotted {
   grid-area: dotted1;
 }
-.second {
+.second_dotted {
   grid-area: dotted2;
 }
 .icon1 {

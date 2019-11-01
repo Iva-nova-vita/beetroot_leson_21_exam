@@ -218,8 +218,8 @@ a {
   #icons img {
     margin: 0 auto;
     display: block; }
-  #icons .first,
-  #icons .second {
+  #icons .first_dotted,
+  #icons .second_dotted {
     width: 90%; }
   #icons .icon1,
   #icons .icon2,
@@ -243,10 +243,10 @@ a {
     height: 300px;
     width: 100%; }
 
-.first {
+.first_dotted {
   grid-area: dotted1; }
 
-.second {
+.second_dotted {
   grid-area: dotted2; }
 
 .icon1 {
